@@ -20,7 +20,7 @@ function Task1(props) {
         if (users[i].email === props.email) {
           if (users[i].completed === "1") {
             alert(
-              "You have already completed task 1....Password for task 2 is 14255...enter the password in the input below task 1"
+              "You have already completed task 1....Password for task 2 is eLitmus...enter the password in the input below task 1"
             );
           } else if (users[i].completed === "2") {
             alert(
@@ -70,12 +70,12 @@ function Task1(props) {
       temp3 = Number(temp3);
     }
 
-    if (temp1 === "yellow") {
-      if (temp2 === "red") {
+    if (temp1 === "chair") {
+      if (temp2 === "door") {
         if (typeof temp3 === "string") {
-          if (temp3 === "three") {
+          if (temp3 === "towel") {
             document.getElementById("password1").innerHTML =
-              "<p>The password for next task is 14255</p>";
+              "<p>The password for next task is eLitmus</p>";
             flag = 1;
             Axios.put("https://backend1-api.onrender.com/update", {
               email: props.email,
@@ -85,7 +85,7 @@ function Task1(props) {
         } else {
           if (temp3 === 3) {
             document.getElementById("password1").innerHTML =
-              "<h1>The password for next task is 14255</h1>";
+              "<h1>The password for next task is eLitmus</h1>";
             flag = 1;
             Axios.put("https://backend1-api.onrender.com/update", {
               email: props.email,
@@ -105,7 +105,7 @@ function Task1(props) {
   }
 
   function handlePassword() {
-    if (password === "14255") {
+    if (password === "eLitmus") {
       setTaskOneDone(true);
     } else {
       alert("Wrong password...Try again");
@@ -203,12 +203,12 @@ function Task1(props) {
           <br></br>
           <br></br>
           <div id="password1">
-            <h3>Click this door after entering all answers in Task 1</h3>
+            <h3>Click this key after entering all answers in Task 1</h3>
             <br></br>
             <img
-              src={require("./images/door.jpg")}
+              src={require("./images/key.png")}
               height={200}
-              width={300}
+              width={200}
               alt=""
               onClick={handleSubmit}
             />
@@ -217,7 +217,7 @@ function Task1(props) {
           </div>
 
           <div>
-            <h3>Enter password hidden inside door to unlock task 2:</h3>
+            <h3>Enter password to unlock task 2:</h3>
             <input
               type="text"
               id="pass1"
@@ -231,12 +231,16 @@ function Task1(props) {
         </center>
       </div>
 
+      <br></br>
+      <br></br>
+      <br></br>
+
       <div class="task2">
         <center>
           {taskOneDone ? (
             <Task2 h={hints} email={props.email} />
           ) : (
-            <h1 id="rules">Complete Task1 to unlock Task2</h1>
+            <h1 id="rules">Complete Task 1 to unlock Task 2</h1>
           )}
         </center>
       </div>

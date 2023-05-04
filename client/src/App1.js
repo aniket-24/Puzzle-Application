@@ -24,7 +24,7 @@ function App1() {
       password: password,
     }).then((response) => {
       if (response.data === "Login successful") {
-        alert("Login successful");
+        alert("You are loged in");
         if (email === "admin@admin.com") {
           navigate("/Admin", { state: { name: "hi" } });
         } else {
@@ -38,7 +38,9 @@ function App1() {
 
   return (
     <div className="App">
-      <h1>PUZZLE APPLICATION</h1>
+      <h1>
+        <strong>PUZZLE APPLICATION</strong>
+      </h1>
       <div className="inputs">
         <input
           type="text"

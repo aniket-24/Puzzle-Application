@@ -23,8 +23,11 @@ function Admin() {
       <h1>
         Welcome buddy, here is the list of usernames and corresponsing score
       </h1>
-      <p>Calculation:</p>
-      <p>Score = number of tasks completed * 50</p>
+      <br></br>
+      <br></br>
+      <h3>Calculation:</h3>
+      <br></br>
+      <h4>Score = number of tasks completed * 50</h4>
       {listOfUsers.map((val) => {
         if (val.email !== "admin@admin.com") {
           return (

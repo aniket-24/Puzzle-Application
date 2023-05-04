@@ -7,7 +7,6 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-//DATABASE CONNECTION
 mongoose.connect(
   "mongodb+srv://aniket24:root@cluster0.eruuj.mongodb.net/?retryWrites=true&w=majority",
   { useNewUrlParser: true }
@@ -31,8 +30,6 @@ app.post("/addUser", async (req, res) => {
     });
 
   if (flag) {
-    // const user = new UsersModel({email: email, password: password, completed: "0"});
-    // await user.save();
     res.send("User not found...sign in");
   } else {
     await UsersModel.find({ email: email })
@@ -47,8 +44,6 @@ app.post("/addUser", async (req, res) => {
         res.send("error!");
       });
   }
-
-  // res.send("Inserted DATA");
 });
 
 app.post("/signup", async (req, res) => {
@@ -104,14 +99,6 @@ app.get("/getData", (req, res) => {
 });
 
 app.get("/", async (req, res) => {
-  // const email = "admin@admin.com";
-  // const password = "iamadmin";
-
-  // const user = new UsersModel({email: email, password: password, completed: 2});
-  // await user.save();
-
-  // res.send("Inserted DATA");
-
   res.send("Hello, World");
 });
 

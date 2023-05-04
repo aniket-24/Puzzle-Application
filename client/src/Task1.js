@@ -115,7 +115,7 @@ function Task1(props) {
   function handleans1(e) {
     e.preventDefault();
 
-    document.getElementById("ans1").innerHTML = "<p>yellow</p>";
+    document.getElementById("ans1").innerHTML = "<p>chair</p>";
 
     setHints((h) => h + 1);
   }
@@ -123,40 +123,37 @@ function Task1(props) {
   function handleans2(e) {
     e.preventDefault();
 
-    document.getElementById("ans2").innerHTML = "<p>red</p>";
+    document.getElementById("ans2").innerHTML = "<p>door</p>";
     setHints((h) => h + 1);
   }
 
   function handleans3(e) {
     e.preventDefault();
 
-    document.getElementById("ans3").innerHTML = "<p>three</p>";
+    document.getElementById("ans3").innerHTML = "<p>towel</p>";
     setHints((h) => h + 1);
   }
 
   return (
     <div>
       <div class="task1">
-        <h1>
-          <center>Task1</center>
-        </h1>
-        <br></br>
-        <h3>
-          <center>
+        <center>
+          <h1>Task1</h1>
+          <br></br>
+          <h3>
             Answer all the three questions and click the door below to get
             password for Task 2
-          </center>
-        </h3>
-        <br></br>
-        <h4>
-          <center>=== Show answer reduces your score ===</center>
-        </h4>
-        <br></br>
-        <br></br>
-        <br></br>
-        <form>
-          <center>
-            <p>1. Enter the color which is used the most in this website</p>
+          </h3>
+          <br></br>
+          <h4>=== Show answer reduces your score ===</h4>
+          <br></br>
+          <br></br>
+          <br></br>
+          <form>
+            <p>
+              1. I have four legs and no feet. When you are tired, I can give
+              you a seat!
+            </p>
             <input
               type="text"
               id="t1q1"
@@ -170,8 +167,8 @@ function Task1(props) {
             <p id="ans1"></p>
             <br></br>
             <p>
-              2. Enter the color which has the longest wavelength i.e., easily
-              visible from long distance
+              2. Tall and thick, all homes have me. To get me open, you might
+              need a key
             </p>
             <input
               type="text"
@@ -185,7 +182,10 @@ function Task1(props) {
             </button>
             <p id="ans2"></p>
             <br></br>
-            <p>3. How many colors does indian flag have? (in words)</p>
+            <p>
+              3. I can get wetter as I dry. When you need to shower, hang me up
+              to dry.
+            </p>
             <input
               type="text"
               id="t1q3"
@@ -198,45 +198,47 @@ function Task1(props) {
             </button>
             <p id="ans3"></p>
             <br></br>
-          </center>
-        </form>
+          </form>
 
-        <br></br>
-        <br></br>
-        <div id="password1">
-          <h3>Click this door after entering all answers in Task 1</h3>
-          <br></br>
-          <img
-            src={require("./images/door.jpg")}
-            height={200}
-            width={300}
-            alt=""
-            onClick={handleSubmit}
-          />
           <br></br>
           <br></br>
-        </div>
+          <div id="password1">
+            <h3>Click this door after entering all answers in Task 1</h3>
+            <br></br>
+            <img
+              src={require("./images/door.jpg")}
+              height={200}
+              width={300}
+              alt=""
+              onClick={handleSubmit}
+            />
+            <br></br>
+            <br></br>
+          </div>
 
-        <div>
-          <h3>Enter password hidden inside door to unlock task 2:</h3>
-          <input
-            type="text"
-            id="pass1"
-            name="password"
-            onChange={handleChange}
-          ></input>
-          <button onClick={handlePassword} className="button-33">
-            Submit
-          </button>
-        </div>
+          <div>
+            <h3>Enter password hidden inside door to unlock task 2:</h3>
+            <input
+              type="text"
+              id="pass1"
+              name="password"
+              onChange={handleChange}
+            ></input>
+            <button onClick={handlePassword} className="button-33">
+              Submit
+            </button>
+          </div>
+        </center>
       </div>
 
       <div class="task2">
-        {taskOneDone ? (
-          <Task2 h={hints} email={props.email} />
-        ) : (
-          <h1 id="rules">Complete Task1 to unlock Task2</h1>
-        )}
+        <center>
+          {taskOneDone ? (
+            <Task2 h={hints} email={props.email} />
+          ) : (
+            <h1 id="rules">Complete Task1 to unlock Task2</h1>
+          )}
+        </center>
       </div>
     </div>
   );

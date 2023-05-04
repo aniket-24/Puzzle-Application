@@ -52,14 +52,14 @@ function Task2(props) {
         "You won the game....scroll down the web page for your soft skills report"
       );
     } else {
-      alert("Wrong answer..try again..use clues if needed");
+      alert("Wrong answer..try again..use hints if needed");
     }
   }
 
   function handleImage1() {
     if (!one) {
       setOne(true);
-      document.getElementById("img1").style.border = "4px solid green";
+      document.getElementById("img1").style.border = "4px solid  #239ce2";
     } else {
       setOne(false);
       document.getElementById("img1").style.border = "";
@@ -69,7 +69,7 @@ function Task2(props) {
   function handleImage2() {
     if (!two) {
       setTwo(true);
-      document.getElementById("img2").style.border = "4px solid green";
+      document.getElementById("img2").style.border = "4px solid  #239ce2";
     } else {
       setTwo(false);
       document.getElementById("img2").style.border = "";
@@ -79,7 +79,7 @@ function Task2(props) {
   function handleImage3() {
     if (!three) {
       setThree(true);
-      document.getElementById("img3").style.border = "4px solid green";
+      document.getElementById("img3").style.border = "4px solid  #239ce2";
     } else {
       setThree(false);
       document.getElementById("img3").style.border = "";
@@ -89,7 +89,7 @@ function Task2(props) {
   function handleImage4() {
     if (!four) {
       setFour(true);
-      document.getElementById("img4").style.border = "4px solid green";
+      document.getElementById("img4").style.border = "4px solid  #239ce2";
     } else {
       setFour(false);
       document.getElementById("img4").style.border = "";

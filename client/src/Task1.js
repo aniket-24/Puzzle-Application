@@ -138,15 +138,16 @@ function Task1(props) {
     <div>
       <div class="task1">
         <center>
+          <h4>=== Show answer reduces your score ===</h4>
+          <br></br>
+          <br></br>
+          <br></br>
           <h1>Task1</h1>
           <br></br>
           <h3>
             Answer all the three questions and click the door below to get
             password for Task 2
           </h3>
-          <br></br>
-          <h4>=== Show answer reduces your score ===</h4>
-          <br></br>
           <br></br>
           <br></br>
           <form>

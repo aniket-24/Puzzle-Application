@@ -5,7 +5,7 @@ function Rules() {
     <div className="rules1">
       <h1 id="rules">Rules:</h1>
       <br></br>
-      <h4>=== Usage of hints reduces your score ===</h4>
+      <h4>=== Show answer reduces your score ===</h4>
       <br></br>
       <p>- Complete Task 1 and Task 2 to complete the game</p>
       <br></br>

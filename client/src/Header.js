@@ -3,7 +3,9 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1>Online Colour Puzzle / Quiz</h1>
+      <h1>
+        <center>PUZZLE APPLICATION</center>
+      </h1>
     </header>
   );
 }

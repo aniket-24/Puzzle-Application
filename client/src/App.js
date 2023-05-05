@@ -5,12 +5,13 @@ import Admin from "./Admin";
 import Rules from "./Rules";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./Signup";
-import Sound from "react-sound";
 
 function App() {
   return (
     <div>
-      <Sound url="./audio.mp3"></Sound>
+      <audio autoPlay loop>
+        <source source="./audio.mp3" type="audio/mpeg" />
+      </audio>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App1 />} />

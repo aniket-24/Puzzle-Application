@@ -1,7 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "./Footer";
 
 import Axios from "axios";
 

@@ -142,7 +142,7 @@ function Task1(props) {
             🚩 Checkout Rules Page <button onClick={handleRules}>Rules</button>
           </h3>
           <br></br>
-          <h1>🎲 Task1</h1>
+          <h1>🎲 Task 1</h1>
           <h3>
             👉🏻 Answer all the three questions and click the door below to get
             password for Task 2

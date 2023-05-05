@@ -20,21 +20,21 @@ function Admin() {
 
   return (
     <div className="listOfUsers">
-      <h1>
-        Welcome buddy, here is the list of usernames and corresponsing score
-      </h1>
-      <br></br>
-      <br></br>
+      <h1>LEADER BOARD</h1>
       <h3>Calculation:</h3>
       <br></br>
       <h4>Score = number of tasks completed * 50</h4>
+      <br></br>
+      <br></br>
       {listOfUsers.map((val) => {
         if (val.email !== "admin@admin.com") {
           return (
             <div className="listOfUsers">
               <div className="user">
-                <h3>Username: {val.email}</h3>
-                <h3>Score: {Number(val.completed) * 50}</h3>
+                <li>
+                  <strong>Username: </strong> {val.email} and{" "}
+                  <strong>Score: </strong> {Number(val.completed) * 50}
+                </li>
               </div>
             </div>
           );

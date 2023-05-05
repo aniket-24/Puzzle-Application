@@ -14,7 +14,7 @@ function Admin() {
         setListOfUsers(documents.data);
       })
       .catch(() => {
-        alert("Error!");
+        alert("Error! 💀");
       });
   }, []);
 
@@ -28,9 +28,9 @@ function Admin() {
       <div className="listOfUsers">
         <br></br>
         <br></br>
-        <h3>Calculation:</h3>
+        <h3>👉🏻 Calculation:</h3>
         <br></br>
-        <h4>Score = number of tasks completed * 50</h4>
+        <h4>📌 Score = number of tasks completed * 50</h4>
         <br></br>
         <br></br>
         {listOfUsers.map((val) => {
@@ -39,7 +39,7 @@ function Admin() {
               <div className="listOfUsers">
                 <div className="user">
                   <li>
-                    Username: {val.email} and Score:{" "}
+                    ▶️ Username: {val.email} ▶️ Score:{" "}
                     {Number(val.completed) * 50}
                   </li>
                 </div>

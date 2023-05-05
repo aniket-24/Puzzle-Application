@@ -198,7 +198,7 @@ function Task1(props) {
           <br></br>
           <br></br>
           <div id="password1">
-            <h3>Click this key after entering all answers in Task 1</h3>
+            <h3>📍 Click this key after entering all answers in Task 1</h3>
             <br></br>
             <img
               src={require("./images/key.png")}
@@ -212,7 +212,7 @@ function Task1(props) {
           </div>
 
           <div>
-            <h3>Enter password to unlock task 2:</h3>
+            <h3>📍 Enter password to unlock task 2:</h3>
             <input
               type="text"
               id="pass1"
@@ -220,7 +220,7 @@ function Task1(props) {
               onChange={handleChange}
             ></input>
             <button onClick={handlePassword} className="button-33">
-              Submit
+              ⏬ Submit Task 1
             </button>
           </div>
         </center>

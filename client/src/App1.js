@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 import Axios from "axios";
 
@@ -66,6 +67,7 @@ function App1() {
         <button onClick={handleSignup}>Signup</button>
         <br></br>
         <p>*** Please wait after clicking ***</p>
+        <br></br>
       </div>
     </div>
   );

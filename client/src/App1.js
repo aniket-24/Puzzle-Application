@@ -24,7 +24,7 @@ function App1() {
       password: password,
     }).then((response) => {
       if (response.data === "Login successful") {
-        alert("You are loged in");
+        alert("You are loged in ✅");
         if (email === "admin@admin.com") {
           navigate("/Admin", { state: { name: "hi" } });
         } else {

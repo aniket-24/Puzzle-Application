@@ -2,9 +2,10 @@
 
 <h2 align="center">Check Your Soft Skills!!
 
-[Visit Website]()
-
+[Visit Website](https://puzzle-application-game.netlify.app/)
 </h2>
+
+![puzzle-application](https://user-images.githubusercontent.com/76562459/236568143-349efd5d-6d48-468e-831d-8d84def8bfa6.jpeg)
 
 <hr>
 

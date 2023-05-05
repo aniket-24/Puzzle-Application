@@ -108,7 +108,7 @@ function Task1(props) {
     if (password === "eLitmus") {
       setTaskOneDone(true);
     } else {
-      alert("Wrong password...Try again");
+      alert("Wrong password ❌");
     }
   }
 
@@ -138,12 +138,9 @@ function Task1(props) {
     <div>
       <div class="task1">
         <center>
-          <h4>=== Show answer reduces your score ===</h4>
-          <br></br>
-          <br></br>
+          <h3>=== Show answer reduces your score ===</h3>
           <br></br>
           <h1>Task1</h1>
-          <br></br>
           <h3>
             Answer all the three questions and click the door below to get
             password for Task 2
@@ -155,6 +152,7 @@ function Task1(props) {
               1. I have four legs and no feet. When you are tired, I can give
               you a seat!
             </p>
+            <br></br>
             <input
               type="text"
               id="t1q1"
@@ -171,6 +169,7 @@ function Task1(props) {
               2. Tall and thick, all homes have me. To get me open, you might
               need a key
             </p>
+            <br></br>
             <input
               type="text"
               id="t1q2"
@@ -187,6 +186,7 @@ function Task1(props) {
               3. I can get wetter as I dry. When you need to shower, hang me up
               to dry.
             </p>
+            <br></br>
             <input
               type="text"
               id="t1q3"

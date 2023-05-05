@@ -12,14 +12,14 @@ body {
 }
 
 header {
-  background-color: #239ce2;
+  background-color: rgb(47, 47, 47);
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-  color: #fff;
+  color: #cc7713;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
@@ -48,7 +48,7 @@ h1 {
 }
 
 #rules {
-  color: #239ce2;
+  color: #cc7713;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
@@ -59,14 +59,14 @@ p {
 }
 
 #task2 > h1 {
-  color: #239ce2;
+  color: #cc7713;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
 
 #result {
   text-align: center;
-  color: #239ce2;
+  color: #cc7713;
   font-family: "McLaren", cursive;
   font-weight: 200;
   font-size: 40px;
@@ -76,7 +76,7 @@ p {
   border: none;
   width: 150px;
   height: 50px;
-  background-color: #239ce2;
+  background-color: rgb(47, 47, 47);
   color: white;
   border-radius: 10px;
   font-size: 15px;

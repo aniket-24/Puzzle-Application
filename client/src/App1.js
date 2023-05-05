@@ -38,9 +38,15 @@ function App1() {
 
   return (
     <div className="App">
-      <h1>
-        <strong>PUZZLE APPLICATION</strong>
-      </h1>
+      <header>
+        <h1>
+          <center> PUZZLE APPLICATION 🕹️</center>
+        </h1>
+      </header>
+      <br></br>
+      <h2>Checkout Your Soft Skills! 🧩</h2>
+      <br></br>
+      <h2>Enjoy🎉🎉</h2>
       <div className="inputs">
         <input
           type="text"
@@ -58,8 +64,9 @@ function App1() {
         ></input>
         <button onClick={addUser}>Login</button>
         <button onClick={handleSignup}>Signup</button>
+        <br></br>
+        <p>*** Please wait after clicking ***</p>
       </div>
-      <p>*** Please wait after clicking ***</p>
     </div>
   );
 }

@@ -40,9 +40,15 @@ function Signup() {
 
   return (
     <div className="App">
-      <h1>
-        <strong>PUZZLE APPLICATION</strong>
-      </h1>
+      <header>
+        <h1>
+          <center> PUZZLE APPLICATION 🕹️</center>
+        </h1>
+      </header>
+      <br></br>
+      <h2>Join US!! ✨</h2>
+      <br></br>
+      <h2>Explore this PUZZLE and have fun 😁</h2>
       <div className="inputs">
         <input
           type="text"
@@ -66,6 +72,8 @@ function Signup() {
           }}
         ></input>
         <button onClick={addUser}>Signup</button>
+        <br></br>
+        <p>*** Please wait after clicking ***</p>
       </div>
     </div>
   );

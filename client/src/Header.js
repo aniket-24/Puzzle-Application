@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <h1>
-        <center>PUZZLE APPLICATION</center>
+        <center>PUZZLE APPLICATION 🕹️</center>
       </h1>
     </header>
   );

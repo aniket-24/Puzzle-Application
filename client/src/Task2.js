@@ -115,9 +115,9 @@ function Task2(props) {
       <center>
         <hr></hr>
         <br></br>
-        <h1>Task 2</h1>
+        <h1>🎲 Task 2</h1>
         <br></br>
-        <h3>Click one image for each question</h3>
+        <h3>👉🏻 Click one image for each question</h3>
         <br></br>
         <br></br>
         <p>

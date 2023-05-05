@@ -19,13 +19,9 @@ function Task1(props) {
       while (i < users.length) {
         if (users[i].email === props.email) {
           if (users[i].completed === "1") {
-            alert(
-              "You have already completed task 1....Password for task 2 is eLitmus...enter the password in the input below task 1"
-            );
+            alert("Already completed task 1.✅ Password for task 2 = eLitmus");
           } else if (users[i].completed === "2") {
-            alert(
-              "You have already finsihed the game....you can retry if you want"
-            );
+            alert("Already finsihed the game.😊 Retry if you want!");
           }
         }
         i++;
@@ -35,7 +31,7 @@ function Task1(props) {
 
   useEffect(() => {
     if (over > 1) {
-      alert("Deadend: task 1 done more than 5 times");
+      alert("Deadend ☠️");
       window.location.reload();
     }
   }, [over]);
@@ -98,9 +94,7 @@ function Task1(props) {
 
     if (flag === 0) {
       setOver((v) => v + 1);
-      alert(
-        "You have not entered all the answers or answers for some question is wrong (use hints given if needed)...try again"
-      );
+      alert("Entered all answers OR Entered answers is wrong (use HINTS) 🥲");
     }
   }
 
@@ -138,19 +132,19 @@ function Task1(props) {
     <div>
       <div class="task1">
         <center>
-          <h3>=== Show answer reduces your score ===</h3>
+          <h3>=== 🔻 Show answer reduces your score 🔻 ===</h3>
           <br></br>
-          <h1>Task1</h1>
+          <h1>🎲 Task1</h1>
           <h3>
-            Answer all the three questions and click the door below to get
+            👉🏻 Answer all the three questions and click the door below to get
             password for Task 2
           </h3>
           <br></br>
           <br></br>
           <form>
             <p>
-              1. I have four legs and no feet. When you are tired, I can give
-              you a seat!
+              📌 Q1. I have four legs and no feet. When you are tired, I can
+              give you a seat!
             </p>
             <br></br>
             <input
@@ -161,13 +155,13 @@ function Task1(props) {
             ></input>
             <br></br>
             <button onClick={handleans1} className="button-33">
-              Show answer
+              🚨 Show answer
             </button>
             <p id="ans1"></p>
             <br></br>
             <p>
-              2. Tall and thick, all homes have me. To get me open, you might
-              need a key
+              📌 Q2. Tall and thick, all homes have me. To get me open, you
+              might need a key
             </p>
             <br></br>
             <input
@@ -178,13 +172,13 @@ function Task1(props) {
             ></input>
             <br></br>
             <button onClick={handleans2} className="button-33">
-              Show answer
+              🚨 Show answer
             </button>
             <p id="ans2"></p>
             <br></br>
             <p>
-              3. I can get wetter as I dry. When you need to shower, hang me up
-              to dry.
+              📌 Q3. I can get wetter as I dry. When you need to shower, hang me
+              up to dry.
             </p>
             <br></br>
             <input
@@ -195,7 +189,7 @@ function Task1(props) {
             ></input>
             <br></br>
             <button onClick={handleans3} className="button-33">
-              Show answer
+              🚨 Show answer
             </button>
             <p id="ans3"></p>
             <br></br>

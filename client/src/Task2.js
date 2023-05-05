@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Task1 from "./Task1";
 import Axios from "axios";
 
@@ -8,6 +9,7 @@ function Task2(props) {
   const [three, setThree] = useState(false);
   const [four, setFour] = useState(false);
   const [hint, setHint] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (hint + props.h > 4) {
@@ -108,6 +110,10 @@ function Task2(props) {
     setHint((h) => h + 1);
   }
 
+  const handleLeaderBoard = () => {
+    navigate("/admin");
+  };
+
   return (
     <div id="task2">
       <center>
@@ -181,6 +187,12 @@ function Task2(props) {
         <br></br>
         <h3>=== 🔻 Scroll down for your soft skills report 🔻 ===</h3>
         <div id="result"></div>
+        <br></br>
+        <br></br>
+        <h3>
+          🚩 Checkout Leader Board Page{" "}
+          <button onClick={handleLeaderBoard}>Leader Board</button>
+        </h3>
       </center>
     </div>
   );

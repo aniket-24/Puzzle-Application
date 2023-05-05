@@ -73,7 +73,9 @@ function Signup() {
         ></input>
         <button onClick={addUser}>Signup</button>
         <br></br>
-        <p>*** Please wait after clicking ***</p>
+        <p>
+          *** Please wait for around 1 minute after clicking signup button ***
+        </p>
       </div>
     </div>
   );

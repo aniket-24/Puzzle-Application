@@ -66,7 +66,9 @@ function App1() {
         <button onClick={addUser}>Login</button>
         <button onClick={handleSignup}>Signup</button>
         <br></br>
-        <p>*** Please wait after clicking ***</p>
+        <p>
+          *** Please wait for around 1 minute after clicking login button ***
+        </p>
         <br></br>
       </div>
     </div>

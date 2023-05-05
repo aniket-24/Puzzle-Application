@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Task2 from "./Task2";
 import Axios from "axios";
 
@@ -10,6 +11,7 @@ function Task1(props) {
   const [taskOneDone, setTaskOneDone] = useState(false);
   const [hints, setHints] = useState(0);
   const [over, setOver] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     Axios.get("https://backend1-api.onrender.com/getData").then((response) => {
@@ -128,11 +130,17 @@ function Task1(props) {
     setHints((h) => h + 1);
   }
 
+  const handleRules = () => {
+    navigate("/rules");
+  };
+
   return (
     <div>
       <div class="task1">
         <center>
-          <h3>=== 🔻 Show answer reduces your score 🔻 ===</h3>
+          <h3>
+            🚩 Checkout Rules Page <button onClick={handleRules}>Rules</button>
+          </h3>
           <br></br>
           <h1>🎲 Task1</h1>
           <h3>

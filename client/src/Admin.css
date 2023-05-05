@@ -13,7 +13,7 @@ body {
 
 .user {
   width: 500px;
-  height: 30px;
+  height: 50px;
   background-color: rgb(47, 47, 47);
   color: white;
   font-family: "Courier New", Courier, monospace;
@@ -22,8 +22,11 @@ body {
   padding: 2px;
 }
 
-.user h3 {
+li {
+  display: flex;
   margin-left: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 button {

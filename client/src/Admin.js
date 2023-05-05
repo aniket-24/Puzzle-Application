@@ -32,8 +32,7 @@ function Admin() {
             <div className="listOfUsers">
               <div className="user">
                 <li>
-                  <strong>Username: </strong> {val.email} and{" "}
-                  <strong>Score: </strong> {Number(val.completed) * 50}
+                  Username: {val.email} and Score: {Number(val.completed) * 50}
                 </li>
               </div>
             </div>
